@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag App</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="nav__div">
+          <h1>Where in the world?</h1>
+        </div>
+      </nav>
+
+      <div class="country__div">
+        <div class="country__nav">
+          <form class="country__form">
+            <input
+              class="country__input"
+              placeholder="Search for a country..."
+              type="text"
+            />
+          </form>
+          <select class="select__country" name="continents" id="">
+            <option value="none" disabled selected hidden>
+              Filter by Region
+            </option>
+            <option class="options" value="all">All</option>
+            <option class="options" value="africa">Africa</option>
+            <option class="options" value="america">America</option>
+            <option class="options" value="asia">Asia</option>
+            <option class="options" value="europe">Europe</option>
+            <option class="options" value="oceania">Oceania</option>
+          </select>
+        </div>
+        <div class="cards">
+          <!-- <div class="card">
+            <img class="card__image" src="./slika.jpg" alt="" />
+            <div class="card__description">
+              <h1 class="card__flag">Name</h1>
+              <p>Population: 123</p>
+              <p>Region: Europe</p>
+              <p>Capital: Grad</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+
+    <!-- POPUP -->
+    <div class="popup hidden">
+      <div class="popup__nav"></div>
+      <div class="popup__main"></div>
+      <!-- <div class="popup__nav">
+        <button><span>&#8592;</span>Back</button>
+      </div>
+      <div class="popup__main">
+        <div class="popup__col--1">
+          <img class="popup__image" src="./slika.jpg" alt="" />
+        </div>
+        <div class="popup__col--2">
+          <h1>Belgium</h1>
+          <div id="col--1">
+            <p>Native name: <span>Belgie</span></p>
+            <p>Population: <span>11331159</span></p>
+            <p>Region: <span>Europe</span></p>
+            <p>Sub Region: <span>Western Europe</span></p>
+            <p>Capital: <span>Brussles</span></p>
+          </div>
+          <div id="col--2">
+            <p>Top Level Domain: <span>.be</span></p>
+            <p>Currencies: <span>Euro</span></p>
+            <p>Languages: <span>Dutch, French, German</span></p>
+          </div>
+
+          <div class="borders">
+            <p id="first__p">Border Countries:</p>
+            <div class="borders__countries">
+              <p>France</p>
+              <p>Germany</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <!-- JS -->
+    <script src="./src/app.js"></script>
+  </body>
+</html>
